@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apspdcl</title>
+    <link rel="stylesheet" href="/apspdcl.css">
+</head>
+<!-----------------------------HEADER-------------------------->
+
+<body id="background">
+    <img src="/apspdcl.jpg" alt="APSPDCL.Logo">
+    <img src="/apspdcl__logo.jpg" alt="logo"id="rightLogo" align="right" width="110">
+    <hr>
+<!---------------INFORMATION---------------->
+<br>
+<div id="info">
+                <a href="#">Payment status</a>
+                <a href="#">Login</a>
+                <a href="#">Services</a>
+                <a href="#">Information</a>
+                <a href="#">Customer service</a>
+</div>
+<br><br><br>
+
+
+
+<!--------------------HEADER BODY--------------------------->
+    <div id="body">
+        <div id="headBody">
+            <h2>Andhra Pradesh Southern Power Distribution Company Limited</h2>
+            <h3>(APSPDCL)</h3>
+        </div>
+            <hr>
+                <marquee behavior="alternate" direction="left" color="red" id="mainHeading">Online Electricity Bill Payment</marquee>
+            <hr>
+
+
+<!------------------------INNER BODY--------------------------->
+    
+<div id="innerBody">
+            <label for="state">Select State</label>
+            <select name="state" id="state">
+                <option value="Andhrapradesh">Andhra pradesh</option>
+            </select>
+            &nbsp;&nbsp;
+            <label for="district">Select District</label>
+            <select name="district" id="district">
+                <option value="srikakulam">Srikakulam</option>
+                <option value="Alluri Seetharama Raju">paderu(NEW)</option>
+                <option value="vizianagaram">Vizianagaram</option>
+                <option value="Kakinada">Kakinada(NEW)</option>
+                <option value="anakapalli">Anakapalli(NEW)</option>
+                <option value="manyam">Manyam-parvathipuram(NEW)</option>
+                <option value="visakapatnam">Visakapatnam</option>
+                <option value="konaseema">Kona Seema-Amalapuram(NEW)</option>
+                <option value="east godhavari">Rajamahendravaram</option>
+                <option value="west godhavari">West Godhavari-Bheemavaram</option>
+                <option value="eluru">Eluru(NEW)</option>
+                <option value="krishna">Krishna-Machilipatnam</option>
+                <option value="avijayawada">NTR-Vijayawada(NEW)</option>
+                <option value="guntur">Guntur</option>
+                <option value="Bapatla">Bapatla(NEW)</option>
+                <option value="palnadu">Palnadu-Narasaraopeta(NEW)</option>
+                <option value="prakasam">Prakasam-Ongole</option>
+                <option value="nellore">SPS-Nellore</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="nandayal">Nandayal(NEW)</option>
+                <option value="ananthapuram">Ananthapuram</option>
+                <option value="puthaparthy">puttaparthy(NEW)</option>
+                <option value="YSR-kadapa">Kadapa</option>
+                <option value="rayachoty">Annamaya-Rayachoty(NEW)</option>
+                <option value="chittoor">Chittoor</option>
+                <option value="tirupathi">Tirupathi(NEW)</option> 
+            </select>
+            <br>
+            <br>
+            <label for="service_number">Enter Service Number :</label>
+            <input type="text" id="service_number" maxlength="12">
+            <br>
+            <br>
+<!-----------------PAYMENT OPTION------------------->
+            <label for="payment">Choose Payment Method</label>
+            <br>
+            <input type="radio" name="debit_card" id="payment">Debit card
+            <br>
+            <input type="radio" name="debit_card" id="payment">Credit card
+            <br>
+<!--------------------CARD DETAILS----------------------->
+        <fieldset>
+        <div id="cardDetails">
+        <legend><i><b><c>Card Details</c></b></i></legend>
+            <label for="16digit">Enter 16 digits number</label>
+            <input type="password" id="16digit" maxlength="16" placeholder="0000 0000 0000 0000">
+            <br>
+            <label for="valid">Valid Thru</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="5" id="valid" placeholder="00/00">
+            <br>
+            <label for="cvv">CVV</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" id="cvv" maxlength="3" placeholder="000">
+          </fieldset>
+        </div>
+        <br>
+        <label for="submit"></label>
+        <input type="submit" value="submit" id="submit" class="buttons">
+        &nbsp;
+        <label for="reset"></label>
+        <input type="reset" name="reset" id="reset" class="buttons">
+</div>
+    <hr>
+<!-----------------------------FOOTER-------------------------->
+<footer>
+    <div id="footer">
+        <p>
+            &copy; 2023 All Rights reserved;
+            <br>
+            Designed and developed by * * * * * * tm.
+        </p>
+    </div>
+</footer>   
+</body>
+</html>

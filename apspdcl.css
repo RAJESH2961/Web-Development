@@ -1,0 +1,134 @@
+#background
+{
+    background-color:rgb(90, 70, 223);
+}
+*
+{
+    margin:0;
+    padding:0;
+}
+input
+{
+    margin: 5px black;
+}
+
+#body
+{
+    border: 5 px black;
+    background-color: white;
+    text-align: center;
+    width: 700px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainHeading
+{
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+#headBody
+{
+    color: blue;
+    background-color: blue;
+    text-align: center;
+    width: 700px;
+    height: 76px;
+    margin-left: auto;
+    color: whitesmoke;
+    text-decoration-style: double;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family:'Times New Roman';
+}
+#innerBody
+{
+    margin: auto;
+    border: 3px solid grey;
+    padding: 10px;
+    width: 550px;
+    height: 300px;
+    margin: auto;
+    text-align: left;
+    background-color: blanchedalmond;
+}
+#footer
+{
+    text-align: center;
+    margin: auto;
+    color:whitesmoke;
+    font: bold;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cardDetails
+{
+    background-color:darkgrey;
+    width: 340px;
+    height:130px;
+    align-self: auto;
+    border: 1px solid black;
+    margin-left: auto;
+    box-shadow: 3px 3px;
+}
+#cardDetails:hover
+{
+    background:tan;
+}
+.buttons
+{
+    color: black;
+    background-color: rgb(54, 216, 216);
+    border-radius: 2px;
+    border-color: blue;
+    font-size: medium;
+    animation: reverse;
+    text-align: center;
+
+}
+#info
+{
+    border: 5 px black;
+    background-color: white;
+    text-align: center;
+    width: 500px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    box-shadow: 1.95px 1.9px 2.6px rgba(0,0,0,1);
+    border-right: 2px solid black;
+    background-color: aliceblue;
+    transform: skew(-25deg);
+}
+
+#information a:hover
+{
+    width:300px;
+
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:blue;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
+  #linkHover
+  {
+    a.linkHover:hover, a.linkHover:active {font-size: 150%;}
+  }
