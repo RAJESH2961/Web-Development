@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            background-color: black;
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            
+        }
+        .buttons{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding: 15px;
+        }
+        button{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background-color: gray;
+            outline: none;
+            font-size: 1.4rem;
+            color: white;
+            font-weight: 700;
+            margin: 5px;
+        }
+        input{
+            border-radius: 10px;
+
+            margin-top: 5px;
+            width:100%;
+            height:70px;
+            background-color: black;
+            color:white;
+            border: none;
+            font-size: 40px;
+            outline: none;
+            
+        }
+        button:hover{
+            background-color: hsl(0, 0%, 40%);
+        }
+                /* 49-->40 decreasing lightness */
+
+        .opeartor_buttons{
+            background-color: hsl(29, 85%, 49%);
+        }
+        .opeartor_buttons:hover{
+            background-color: hsl(30, 100%, 40%);
+        }
+
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="display" readonly>
+        <hr>
+        <div class="buttons">
+        <button onclick="clear_display()">Ac</button>
+        <!-- <button onclick="append_to_display('+')">+</button> -->
+        <!-- <button onclick="append_to_display('-')">-</button> -->
+        <button onclick="append_to_display('7')">7</button>
+        <button onclick="append_to_display('8')">8</button>
+        <button onclick="append_to_display('9')">9</button>
+        <button onclick="append_to_display('/')"class="opeartor_buttons"
+        >/</button>
+
+        <button onclick="append_to_display('4')">4</button>
+        <button onclick="append_to_display('5')">5</button>
+        <button onclick="append_to_display('6')">6</button>
+        <button onclick="append_to_display('x')"class="opeartor_buttons">x</button>
+
+        <button onclick="append_to_display('1')">1</button>
+        <button onclick="append_to_display('2')">2</button>
+        <button onclick="append_to_display('3')">3</button>
+        <button onclick="append_to_display('+')"class="opeartor_buttons">+</button>
+        <button onclick="append_to_display('0')">0</button>
+        <button onclick="append_to_display('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="append_to_display('-')"class="opeartor_buttons">-</button>
+
+    </div>
+</div>
+<script>
+    const display=document.getElementById("display");
+
+    function append_to_display(input){
+        display.value+=input;
+
+    }
+    function clear_display(){
+        display.value="";
+
+    }
+    // function calculate(){
+    //     display.value=eval(display.value);
+    // }
+// The problem in the above code is when we do calculations without giving 2nd value  like 2+= it will caught an error on te debugger console it is an dangerous  code that will lead to error
+// to over come this we can use try  catch
+
+function calculate(){
+    try{
+        display.value=eval(display.value);
+
+    }
+    catch{
+        display.value="Error"
+
+    }
+}
+
+</script>
+    
+</body>
+</html>
