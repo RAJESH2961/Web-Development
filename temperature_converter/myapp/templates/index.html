@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+   <div class="container">
+    <h2>Temperature Converter</h2>
+
+    <!-- from unit  -->
+    <label for="fromunit">From</label>
+    <select name="" id="fromunit">
+        <option value="C">Celcious</option>
+        <option value="F">Fahrenheit</option>
+        <option value="K">Kelvin</option>
+        <option value="R">Rankine</option>
+    </select>
+
+    <!-- To unit -->
+    <label for="tounit">TO</label>
+    <select name="" id="tounit">
+        <option value="C">Celcious</option>
+        <option value="F">Fahrenheit</option>
+        <option value="K">Kelvin</option>
+        <option value="R">Rankine</option>
+    </select>
+
+    <!-- Getting Input Temperature -->
+    <label for="temperature">Temperature</label>
+    <input type="number" name="" id="temperature" placeholder="Enter Temperature">
+    <button onclick="convert()">Convert</button>
+<!-- Result  -->
+    <label for="result">Result</label>
+    <input type="text" id="result" placeholder="0.00" readonly>
+   </div>
+<!-- adding external js file -->
+   <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
